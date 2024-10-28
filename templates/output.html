@@ -1,0 +1,56 @@
+<!--<!doctype html>-->
+<!--<html>-->
+<!--  <head>-->
+<!--    <title>Prediction Results</title>-->
+<!--  </head>-->
+<!--  <body>-->
+<!--    <h1>Prediction Results</h1>-->
+<!--    {% if predictions %}-->
+<!--      <p>Predictions:</p>-->
+<!--      <ul>-->
+<!--        {% for prediction in predictions %}-->
+<!--          <li>{{ prediction }}</li>-->
+<!--        {% endfor %}-->
+<!--      </ul>-->
+<!--    {% endif %}-->
+<!--  </body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LightGBM Model Company Bankruptcy Prediction Results</title>
+    <style>
+      body {
+        background-image: url("/static/bank.png");
+<!--        background: linear-gradient(to right bottom, #8c7ae6, #c36f89);-->
+        background-repeat: no-repeat;
+        background-size: cover;
+<!--  background-repeat: no-repeat;-->
+  background-position: center center;
+        height: 100vh;
+      }
+<!--      h1 {-->
+<!--        font-size: 50px;-->
+<!--        text-align: center;-->
+<!--        color: white;-->
+<!--        text-shadow: 2px 2px #000000;-->
+<!--      }-->
+      p {
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+        width:800px;
+<!--        margin-top:50px;-->
+      }
+
+    </style>
+  </head>
+  <body >
+    <h1 style="color:#fff;text-align:center;">LightGBM Model Company Bankruptcy Prediction Result</h1>
+    <p style="margin-top:100px">Output for Company's status in Bankruptcy:</p>
+    {% for sentence in sentences %}
+      <p>{{ sentence }}</p>
+    {% endfor %}
+  </body>
+</html>
